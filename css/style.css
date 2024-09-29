@@ -257,6 +257,12 @@ body {
   letter-spacing: 0.36px;
 }
 
+.arrowr-icon{
+  width: 35px;
+  height: 28px;
+  fill: #cda274;
+}
+
 .about-us {
   padding-bottom: 139.39px;
 }
@@ -291,6 +297,31 @@ body {
   line-height: 1.5;
   letter-spacing: 0.22px;
   width: 531px;
+}
+
+.about-link{
+  width: 93px;
+  height: 93px;
+  border-radius: 50%;
+  background-color: #F4F0EC;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.phone{
+width: 34px;
+height: 34px;
+fill: #cda274;
+}
+
+.about-link:hover{
+  background-color: burlywood;
+  .phone{
+    fill: wheat; 
+    stroke: #000;
+    stroke-width: 1px;
+  }
 }
 
 .about-us-text:last-child {
