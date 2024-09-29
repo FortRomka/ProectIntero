@@ -507,6 +507,7 @@ fill: #cda274;
 
 .logos-item:nth-child(5) > .logos-img {
   width: 117px;
+  height: 48px;
 }
 
 .projects {
