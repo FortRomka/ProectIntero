@@ -482,32 +482,42 @@ fill: #cda274;
 .logos-items {
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
 }
 
-.logos-item:nth-child(1) > .logos-img {
+.logos-item:nth-child(1) .logos-img {
   width: 132px;
-  margin-right: 125px;
+  /* margin-right: 125px; */
+  fill: #292F36;
 }
 
-.logos-item:nth-child(2) > .logos-img {
+.logos-item:nth-child(1) .logos-img:hover {
+ fill: #cda274;
+}
+
+.logos-item:nth-child(2) .logos-img {
   width: 103px;
-  margin-right: 110px; 
+  /* margin-right: 110px;  */
+  fill: #292F36;
+  background-color: transparent;
 }
 
-.logos-item:nth-child(3) > .logos-img {
+.logos-item:nth-child(3) .logos-img {
   width: 164px;
-  margin-right: 89px; 
+  /* margin-right: 89px;  */
+  fill: #292F36;
 }
 
-.logos-item:nth-child(4) > .logos-img {
+.logos-item:nth-child(4) .logos-img {
   width: 145px;
-  margin-right: 112px; 
+  /* margin-right: 112px;  */
+  fill: #292F36;
 }
 
-.logos-item:nth-child(5) > .logos-img {
+.logos-item:nth-child(5) .logos-img {
   width: 117px;
   height: 48px;
+  fill: #292F36;
 }
 
 .projects {
@@ -586,11 +596,19 @@ fill: #cda274;
   border: none;
 }
 
+.projects-item-btn:hover{
+  background-color: gray;
+  .projects-btn-img{
+    fill: white;
+  }
+}
+
 .projects-btn-img {
   width: 9px;
   height: 16px;
   margin-right: auto;
   margin-left: auto;
+  fill: #cda274;
 }
 
 .designflooringfurniter {
@@ -851,6 +869,27 @@ fill: #cda274;
 .footer-items {
   display: flex;
   gap: 40px;
+  align-items: center;
+}
+
+.footer-link{
+  width: 10px;
+  height: 19px;
+}
+
+.footer-item:nth-child(2) .footer-link{
+  width: 18px;
+  height: 15px;
+}
+
+.footer-item:nth-child(3) .footer-link{
+  width: 16px;
+  height: 17px;
+}
+
+.footer-item:nth-child(4) .footer-link{
+  width: 17px;
+  height: 18px;
 }
 
 .footer-list {
