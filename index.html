@@ -55,8 +55,8 @@
                 <h2 class="hero-title">Let's Create Your Dream Interior</h2>
                 <p class="hero-text">The world needs innovators and problem solvers who turn challenges into greater
                     opportunities.</p>
-                <button type="button" class="hero-btn"><span class="hero-btn-title">Get Started</span><img
-                        src="./img/arroworange.png" alt="Стрілка" class="hero-btn-img"></button>
+                <button type="button" class="hero-btn" data-modal-open><span class="hero-btn-title">Get
+                        Started</span><img src="./img/arroworange.png" alt="Стрілка" class="hero-btn-img"></button>
             </div>
         </section>
         <section class="specification">
@@ -127,7 +127,7 @@
                 <img src="./img/halfkitchen.png" alt="Половина кухні">
             </div>
         </section>
-        <section class="we">
+        <section class="we" id="qerty">
             <div class="container">
                 <h2 class="we-title">What the People Thinks About Interno</h2>
                 <ul class="we-items">
@@ -215,16 +215,21 @@
                     team<br>excited to help you, getting started with us never been easier.</p>
                 <ul class="projects-items">
                     <li class="projects-item">
-                        <img src="./img/plants-and-sofa.png" alt="Диван та рослини" class="projects-item-img">
+                        <div class="projectewarb">
+                            <img src="./img/plants-and-sofa.png" alt="Диван та рослини" class="projects-item-img">
+                            <p class="project-oworled">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Impedit
+                                odio repudiandae voluptatum ullam facere dolor numquam minima aspernatur nisi corrupti
+                                deleniti a, amet, modi ducimus culpa, deserunt repellat est cupiditate.</p>
+                        </div>
                         <div class="project-item-box">
                             <h3 class="projects-item-title">Winery Dry Creek Building</h3>
                             <p class="projects-item-text">Art Modern</p>
                         </div>
                         <button type="button" class="projects-item-btn">
                             <!-- <img src="./img/arrowright.png" alt="Стрілочка" class="projects-btn-img"> -->
-                             <svg class="projects-btn-img">
+                            <svg class="projects-btn-img">
                                 <use href="./img/symbol-defs.svg#icon-strilka2"></use>
-                             </svg>
+                            </svg>
                         </button>
                     </li>
                     <li class="projects-item">
@@ -237,7 +242,7 @@
                             <!-- <img src="./img/arrowright.png" alt="Стрілочка" class="projects-btn-img"> -->
                             <svg class="projects-btn-img">
                                 <use href="./img/symbol-defs.svg#icon-strilka2"></use>
-                             </svg>
+                            </svg>
                         </button>
                     </li>
                     <li class="projects-item">
@@ -250,7 +255,7 @@
                             <!-- <img src="./img/arrowright.png" alt="Стрілочка" class="projects-btn-img"> -->
                             <svg class="projects-btn-img">
                                 <use href="./img/symbol-defs.svg#icon-strilka2"></use>
-                             </svg>
+                            </svg>
                         </button>
                     </li>
                     <li class="projects-item">
@@ -263,7 +268,7 @@
                             <!-- <img src="./img/arrowright.png" alt="Стрілочка" class="projects-btn-img"> -->
                             <svg class="projects-btn-img">
                                 <use href="./img/symbol-defs.svg#icon-strilka2"></use>
-                             </svg>
+                            </svg>
                         </button>
                     </li>
                 </ul>
@@ -384,9 +389,9 @@
                     <li class="footer-item">
                         <a class="footer-social" href="https://www.facebook.com/">
                             <!-- <img src="./img/facebook.png" alt="Логотип Facebook" class="footer-link"> -->
-                             <svg class="footer-link">
+                            <svg class="footer-link">
                                 <use href="./img/symbol-defs.svg#icon-facebook"></use>
-                             </svg>
+                            </svg>
                         </a>
                     </li>
                     <li class="footer-item">
@@ -394,7 +399,7 @@
                             <!-- <img src="./img/twitter.png" alt="Логотип twitter" class="footer-link"> -->
                             <svg class="footer-link">
                                 <use href="./img/symbol-defs.svg#icon-twitter"></use>
-                             </svg>
+                            </svg>
                         </a>
                     </li>
                     <li class="footer-item">
@@ -402,15 +407,15 @@
                             <!-- <img src="./img/linkedin.png" alt="Логотип LinkedIn" class="footer-link"> -->
                             <svg class="footer-link">
                                 <use href="./img/symbol-defs.svg#icon-in"></use>
-                             </svg>
-                    </a>
+                            </svg>
+                        </a>
                     </li>
                     <li class="footer-item">
                         <a href="https://www.instagram.com/">
                             <!-- <img src="./img/instagram.png" alt="Логотип Instagram" class="footer-link"> -->
                             <svg class="footer-link">
                                 <use href="./img/symbol-defs.svg#icon-Instagram"></use>
-                             </svg>
+                            </svg>
                         </a>
                     </li>
                 </ul>
@@ -479,8 +484,60 @@
             <p class="footer-copyright">Copyright <span class="footer-span-c"></span> Interno | Designed
                 by  <span class="footer-span">Victorflow</span>  Templates - Powered by  <span
                     class="footer-span">Webflow</span></p>
+            <a href="#qerty" class="scroll">
+                <svg class="scrollicon">
+                    <use href="./img/symbol-defs.svg#icon-arrow-up"></use>
+                </svg>
+            </a>
         </div>
     </footer>
+    <div class="backdrop is-hidden" data-modal>
+        <div class="modal">
+            <form>
+                <h2 class="text-modal">Залиште свої дані, ми вам передзвонимо</h2>
+                <label for="name" class="modal-label">Ім'я</label>
+                <div class="modal-wrab">
+                    <input type="text" class="model-input" id="name" required>
+                    <svg class="modalicon">
+                        <use href="./img/symbol-defs.svg#icon-person"></use>
+                    </svg>
+                </div>
+                <label for="phone" class="modal-label">Телефон</label>
+                <div class="modal-wrab">
+                    <input type="tel" class="model-input" id="phone" required
+                        pattern="^(?:\+38)?(0\d{9}|[1-9]\d{7,9})$">
+
+                    <svg class="modalicon">
+                        <use href="./img/symbol-defs.svg#icon-phone"></use>
+                    </svg>
+                </div>
+
+                <label for="email" class="modal-label">Пошта</label>
+                <div class="modal-wrab">
+                    <input type="email" class="model-input" id="email" required>
+
+                    <svg class="modalicon">
+                        <use href="./img/symbol-defs.svg#icon-email"></use>
+                    </svg>
+                </div>
+                <label for="comment" class="modal-label">Коментар</label>
+                <textarea name="comment" id="comment" class="modal-texttarea" placeholder="Введіть текст"></textarea>
+
+                <label class="modal-vrab">
+                    <input type="checkbox" class="model-chechbox" required>
+                    <span class="modal-span">Погоджуюся з розсилкою та приймаю</span>
+                    <a href="#" class="modal-link">Умови договору</a>
+                </label>
+                <button type="submit" class="modal-btn">Відправити</button>
+                <button type="button" class="modal-close" data-modal-close>
+                    <svg class="modalicon-close">
+                        <use href="./img/symbol-defs.svg#icon-close"></use>
+                    </svg>
+                </button>
+            </form>
+        </div>
+    </div>
+    <script src="./js/modal.js"></script>
 </body>
 
 </html>
