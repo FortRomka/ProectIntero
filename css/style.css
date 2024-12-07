@@ -590,13 +590,13 @@ fill: #cda274;
 
 .project-oworled{
   font-size: 20px;
-  color: gold;
-  background-color: #2195f33e;
+  color: white;
+  background-color:  rgba(33, 150, 243, 0.90);
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
-  height: 661px;
+  height: 63px;
   padding: 100px 20px;
   border-radius: 0 73px 0 0;
   opacity: 0;
