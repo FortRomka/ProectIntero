@@ -579,12 +579,14 @@ fill: #cda274;
 
 .projectewarb{
   position: relative;
+  overflow: hidden;
 }
 
 
 .projects-item:hover{
   .project-oworled{
     opacity: 1;
+    transform: translateY(0);
   }
 }
 
@@ -600,6 +602,8 @@ fill: #cda274;
   padding: 100px 20px;
   border-radius: 0 73px 0 0;
   opacity: 0;
+  transform: translateY(-100%);
+  transition: 2s;
 }
 
 
@@ -1069,6 +1073,7 @@ fill: #cda274;
   display: flex;
   align-items: center;
   opacity: 1;
+  transition: 2s;
 }
 
 .is-hidden{
@@ -1076,11 +1081,20 @@ fill: #cda274;
   pointer-events: none;
 }
 
+.is-hidden .modal{
+  /* transform: translate(-500px,-500px) rotate(360deg); */
+  transform: translateX(-100%);
+}
+
 .modal{
 background-color: #fff;
 padding: 40px;
 text-align: center;
-position: relative;
+position: absolute;
+top: 50%;
+left: 50%;
+transform: translate(-50%,-50%);
+transition: 2s;
 }
 
 .text-modal{
