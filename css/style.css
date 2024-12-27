@@ -73,6 +73,19 @@ body {
   height: 50px;
   flex-shrink: 0;
   gap: 8px;
+  animation-name: movie-logo;
+  animation-duration: 1000ms;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
+@keyframes movie-logo{
+  0%{
+    transform: scale(0.8);
+  }
+  100%{
+    transform: scale(1.2);
+  }
 }
 
 .header-logo-title {
@@ -146,6 +159,19 @@ body {
   letter-spacing: 0.22px;
   width: 595px;
   margin-bottom: 19px;
+  animation-name: movie-title;
+  animation-duration: 1000ms;
+}
+
+@keyframes movie-title{
+  0%{
+    color: red;
+    transform: translateX(-1000px) rotate(0deg) scale(0.5);
+  }
+  100%{
+    color: var(--title-color);
+    transform: translateX(0) rotate(360deg) scale(1);
+  }
 }
 
 .hero-text {
@@ -168,6 +194,10 @@ body {
   padding: 18px 20px 17px 34px;
   gap: 27px;
   margin-top: 35px;
+  animation-name: movie-logo;
+  animation-duration: 1000ms;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
 }
 
 .hero-btn-title {
