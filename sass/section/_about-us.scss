@@ -1,0 +1,115 @@
+.about-us {
+    padding-bottom: 139.39px;
+  }
+  
+  .about-us > .container {
+    display: flex;
+    align-items: center;
+    gap: 77px;
+  }
+  
+  .about-us-box {
+    margin-top: 13.2px;
+    margin-bottom: 9.8px;
+  }
+  
+  .about-us-title {
+    color: var(--title-color);
+    font-family: "DM Serif Display";
+    font-size: 50px;
+    font-weight: 400;
+    line-height: 1.3;
+    letter-spacing: 0.22px;
+    width: 450px;
+    margin-bottom: 42px;
+  }
+  
+  .about-us-text {
+    color: #4d5053;
+    font-family: Jost;
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 1.5;
+    letter-spacing: 0.22px;
+    width: 531px;
+  }
+  
+  .about-link{
+    width: 93px;
+    height: 93px;
+    border-radius: 50%;
+    background-color: #F4F0EC;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .phone{
+  width: 34px;
+  height: 34px;
+  fill: #cda274;
+  }
+  
+  .about-link:hover{
+    background-color: burlywood;
+    .phone{
+      fill: wheat; 
+      stroke: #000;
+      stroke-width: 1px;
+    }
+  }
+  
+  .about-us-text:last-child {
+    width: 492px;
+  }
+  
+  .about-telefon-box {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    margin-top: 40px;
+    margin-bottom: 50px;
+  }
+  
+  .about-us-link {
+    color: var(--text-color);
+    font-family: Jost;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 1.5; 
+    letter-spacing: 0.22px;
+  }
+  
+  .about-item-text {
+    color: var(--text-color);
+    font-family: Jost;
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 1.5;
+    letter-spacing: 0.22px;
+  }
+  
+  .about-us-btn {
+    display: flex;
+    align-items: center;
+    flex-shrink: 0;
+    border: none;
+    background-color: var(--btn-color);
+    border-radius: 20px;
+    padding: 18px 25px 17px 34px;
+    gap: 17px;
+  }
+  
+  .about-btn-title {
+    color: var(--color);
+    font-family: Jost;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 1.5;
+    letter-spacing: 0.72px;
+  }
+  
+  .about-btn-img { 
+    width: 25px;
+    height: 36px;
+  }

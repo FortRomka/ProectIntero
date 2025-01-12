@@ -1,0 +1,111 @@
+.blogs {
+    padding-top: 143px;
+  }
+  
+  .blogs-title {
+    color: var(--title-color);
+    text-align: center;
+    font-family: "DM Serif Display";
+    font-size: 48px;
+    font-weight: 400;
+    line-height: 3;
+    letter-spacing: 0.22px;
+  }
+  
+  .blogs-text {
+    color: var(--text-color);
+    text-align: center;
+    font-family: Jost;
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 1.5;
+    letter-spacing: 0.22px;
+    margin-top: 21px;
+    margin-bottom: 103px;
+  }
+  
+  .blogs-items {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    row-gap: 40px;
+  }
+  
+  .blogs-item {
+    flex-basis: calc((100% - 40px) / 3);
+    border-radius: 62px;
+    outline: 1px solid var(--border-color);
+    padding-left: 21px;
+    padding-top: 21px;
+    padding-bottom: 41px;
+    padding-right: 21px;
+  }
+  
+  .blogs-item-img {
+    width: 100%;
+    margin-bottom: 15px;
+  }
+  
+  .blogs-item-title {
+    width: 345px;
+    margin-bottom: 20px; 
+    color: var(--title-color);
+    font-family: "DM Serif Display";
+    font-size: 25px;
+    font-weight: 400;
+    line-height: 1.4;
+    letter-spacing: 0.5px;
+    width: 334px;
+  }
+  
+  .blogs-item:nth-child(2) > .blogs-item-title {
+    width: 338px;
+  }
+  
+  .blogs-item:nth-child(3) > .blogs-item-title {
+    width: 337px;
+  }
+  
+  .blogs-item:nth-child(4) > .blogs-item-title {
+    width: 321px;
+  }
+  
+  .blogs-item:nth-child(5) > .blogs-item-title {
+    width: 288px;
+  }
+  
+  .blogs-item:nth-child(6) > .blogs-item-title {
+    width: 295px;
+  }
+  
+  .blogs-item-box {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .blogs-item-text {
+    color: var(--text-color);
+    font-family: Jost;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.5;
+    letter-spacing: 0.22px;
+    width: 144px; 
+  }
+  
+  .blogs-item-btn {
+    width: 52px;
+    height: 52px;
+    border-radius: 100px;
+    background: var(--bcg-color);
+    border: none;
+    margin-right: 21px;
+  }
+  
+  .blogs-btn-img {
+    width: 9px;
+    height: 16px;
+    margin-right: auto;
+    margin-left: auto;
+  }
